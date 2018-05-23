@@ -47,11 +47,11 @@ class Fluent::HttpsJsonOutput < Fluent::TimeSlicedOutput
   def write(chunk)
     events = []
     chunk.msgpack_each {|(tag,time,record)|
-      events << {:tag => tag, :time => time, :record => record}
+      events << record
     }
     events = events.to_json
     req = Net::HTTP::Post.new(@uri.path)
-    req.set_form_data({"events" => events})
+    req.set_form_data(events)
     if @use_https
       res = @https.request(req)
     else
