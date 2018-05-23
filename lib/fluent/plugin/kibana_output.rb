@@ -1,7 +1,7 @@
-class Fluent::MinerOutput < Fluent::TimeSlicedOutput
+class Fluent::KibanaOutput < Fluent::TimeSlicedOutput
   # First, register the plugin. NAME is the name of this plugin
   # and identifies the plugin in the configuration file.
-  Fluent::Plugin.register_output('miner', self)
+  Fluent::Plugin.register_output('kibana', self)
 
   def initialize
     require 'net/http'

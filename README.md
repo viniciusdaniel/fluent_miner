@@ -1,19 +1,19 @@
-[Fluentd](http://fluentd.org)/miner
+[Fluentd](http://fluentd.org)/kibana
 =================
 
-A fluentd buffered output filter that posts to https a json array of records
+A fluentd buffered output filter that posts to https a json array of records on kibana format
 
 Installation
 =================
 
-gem install 'fluent-plugin-https-json'
+gem install 'fluent-kibana-plugin'
 
 Usage
 =================
 
 ```
 <match SOME_EVENT>
-  type miner
+  type kibana
   buffer_path /tmp/buffer
 
   buffer_chunk_limit 256m
