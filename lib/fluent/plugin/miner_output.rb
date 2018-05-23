@@ -1,4 +1,4 @@
-class Fluent::HttpsJsonOutput < Fluent::TimeSlicedOutput
+class Fluent::MinerOutput < Fluent::TimeSlicedOutput
   # First, register the plugin. NAME is the name of this plugin
   # and identifies the plugin in the configuration file.
   Fluent::Plugin.register_output('miner', self)

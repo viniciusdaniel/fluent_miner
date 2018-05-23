@@ -1,13 +1,13 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |gem|
-  gem.name          = "fluent-plugin-miner"
+  gem.name          = "fluent-miner-plugin"
   gem.version       = "0.0.1"
   gem.authors       = ["Vinicius Daniel Antunes Oliveira"]
   gem.email         = ["viniciusdaniel@gmail.com"]
   gem.summary       = %q{Fluentd output plugin to buffer logs as json arrays to a url}
   gem.description   = gem.summary
-  gem.homepage      = "https://github.com/viniciusdaniel/fluentd_https_out"
+  gem.homepage      = "https://github.com/viniciusdaniel/fluentd_miner"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

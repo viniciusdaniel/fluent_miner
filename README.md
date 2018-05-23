@@ -1,4 +1,4 @@
-[Fluentd](http://fluentd.org)d_https_out
+[Fluentd](http://fluentd.org)/miner
 =================
 
 A fluentd buffered output filter that posts to https a json array of records
@@ -13,7 +13,7 @@ Usage
 
 ```
 <match SOME_EVENT>
-  type https_json
+  type miner
   buffer_path /tmp/buffer
 
   buffer_chunk_limit 256m
