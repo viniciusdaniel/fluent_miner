@@ -1,7 +1,7 @@
 class Fluent::HttpsJsonOutput < Fluent::TimeSlicedOutput
   # First, register the plugin. NAME is the name of this plugin
   # and identifies the plugin in the configuration file.
-  Fluent::Plugin.register_output('https_json', self)
+  Fluent::Plugin.register_output('miner', self)
 
   def initialize
     require 'net/http'
